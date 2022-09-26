@@ -2,9 +2,9 @@ version: '3.5'
 
 services:
   sentinel:
-    image: foxiswho/sentinel
-    hostname: sentinel
-    container_name: sentinel
+    image: thebizark/docker-sentinel
+    hostname: sentinel-dashboard
+    container_name: sentinel-dashboard
     ports:
       - "8280:8280"
     environment:

@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.
@@ -76,6 +75,7 @@ JAVA_OPT="${JAVA_OPT} -Dcsp.sentinel.app.type=1 "
 JAVA_OPT="${JAVA_OPT} -Dsentinel.dashboard.auth.username=${USERNAME} "
 JAVA_OPT="${JAVA_OPT} -Dsentinel.dashboard.auth.password=${PASSWORD} "
 JAVA_OPT="${JAVA_OPT} -Dcsp.sentinel.dashboard.server=${SERVER_HOST:-localhost}:${SERVER_PORT:-8280} "
+JAVA_OPT="${JAVA_OPT} -Dcsp.sentinel.api.port=${API_PORT:-8719} "
 JAVA_OPT="${JAVA_OPT} ${JAVA_OPT_EXT}"
 JAVA_OPT="${JAVA_OPT} -jar sentinel-dashboard.jar "
 JAVA_OPT="${JAVA_OPT} -cp ${CLASSPATH}"

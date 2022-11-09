@@ -8,7 +8,7 @@ ARG port
 ARG api_port
 
 # sentinel version
-ENV SENTINEL_VERSION ${version:-1.8.5}
+ENV SENTINEL_VERSION ${version:-1.8.6}
 #PORT
 ENV PORT ${port:-8718}
 ENV API_PORT ${api_port:-8719}

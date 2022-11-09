@@ -4,7 +4,7 @@ alibaba sentinel
 
 # TAGS
 
-`1.8.5`,`latest`
+`1.8.6`,`latest`
 
 `1.6.1`, `1.6.3`, 
 

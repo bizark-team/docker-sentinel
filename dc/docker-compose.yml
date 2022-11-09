@@ -6,7 +6,7 @@ services:
     hostname: sentinel-dashboard
     container_name: sentinel-dashboard
     ports:
-      - "8280:8280"
+      - "8718:8718"
     environment:
       - JAVA_OPTS=-Dcsp.sentinel.log.dir=/opt/logs
     volumes:

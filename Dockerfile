@@ -10,13 +10,13 @@ ARG api_port
 # sentinel version
 ENV SENTINEL_VERSION ${version:-1.8.5}
 #PORT
-ENV PORT ${port:-8280}
+ENV PORT ${port:-8718}
 ENV API_PORT ${api_port:-8719}
 ENV JAVA_OPT=""
 #
 ENV PROJECT_NAME sentinel-dashboard
 ENV SERVER_HOST localhost
-ENV SERVER_PORT 8280
+ENV SERVER_PORT 8718
 ENV USERNAME sentinel
 ENV PASSWORD sentinel
 

@@ -9,7 +9,7 @@ alibaba sentinel
 `1.6.1`, `1.6.3`, 
 
 # 端口
-web端口 8280
+web端口 8718
 
 api server : 8719
 
@@ -23,24 +23,24 @@ sentinel/sentinel
 # run
 
 ```shell
-docker run --name sentinel -p 8280:8280 -v ./logs:/opt/logs thebizark/docker-sentinel
+docker run --name sentinel -p 8718:8718 -v ./logs:/opt/logs thebizark/docker-sentinel
 ```
 
 或
 
 ```shell
-docker run -e JAVA_OPT_EXT='-Xmx1g' -e USERNAME="sentinel" -e PASSWORD="sentinel" -e SERVER_HOST="localhost" --name sentinel -p 8280:8280 thebizark/docker-sentinel
+docker run -e JAVA_OPT_EXT='-Xmx1g' -e USERNAME="sentinel" -e PASSWORD="sentinel" -e SERVER_HOST="localhost" --name sentinel -p 8718:8718 thebizark/docker-sentinel
 ```
 或
 
 ```shell
-docker run --rm --name sentinel -p 8280:8280 thebizark/docker-sentinel
+docker run --rm --name sentinel -p 8718:8718 thebizark/docker-sentinel
 ```
 
 或
 
 ```shell
-docker run --rm -e JAVA_OPT_EXT='-Xmx1g' --name sentinel -p 8280:8280 thebizark/docker-sentinel
+docker run --rm -e JAVA_OPT_EXT='-Xmx1g' --name sentinel -p 8718:8718 thebizark/docker-sentinel
 ```
 
 # 官网
@@ -66,10 +66,10 @@ docker build -t thebizark/docker-sentinel:1.6.1 --build-arg version=1.6.1 ./
 
 启动容器
 ````SHELLL
-docker run --rm --name sentinel -p 8280:8280 thebizark/docker-sentinel:1.6.1
+docker run --rm --name sentinel -p 8718:8718 thebizark/docker-sentinel:1.6.1
 
 或
-docker run --rm -e JAVA_OPT_EXT="-Dserver.port=8280 -Dcsp.sentinel.dashboard.server=localhost:8280 -Dproject.name=sentinel-dashboard -Djava.security.egd=file:/dev/./urandom" --name sentinel -p 8280:8280 thebizark/docker-sentinel:1.6.1
+docker run --rm -e JAVA_OPT_EXT="-Dserver.port=8718 -Dcsp.sentinel.dashboard.server=localhost:8718 -Dproject.name=sentinel-dashboard -Djava.security.egd=file:/dev/./urandom" --name sentinel -p 8718:8718 thebizark/docker-sentinel:1.6.1
 ````
 
 
